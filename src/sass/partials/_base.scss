@@ -1,6 +1,6 @@
 .uit {
     overflow: hidden;
-    background-color: $c-white;
+    background-color: transparent;
 }
 
 .uit-container {
@@ -44,7 +44,7 @@
 }
 
 .content, .article__body, .tonal--tone-feature {
-    background-color: $c-white !important;
+    background-color: #fef9f5 !important;
 }
 
 figure.element-atom {

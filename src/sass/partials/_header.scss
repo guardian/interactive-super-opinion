@@ -5,19 +5,21 @@
 .uit-header__headline {
     padding: 6px 0;
     font-family: 'Guardian Egyptian Web';
-    font-weight: 700;
+    font-weight: 200;
     font-size: 24px;
-    line-height: 1.1;
+    line-height: 1.2em;
     margin-left: 0 !important;
+    background-origin: content-box;
+    background-position: 0 5px;
+    background-image: linear-gradient(180deg, 
+        transparent calc(100% - 1px), 
+        $c-light-grey
+    );
+    background-size: 1px 1.2em;
 
     @include mq(tablet) {
         font-size: 48px;
     }
-}
-
-.uit-header__headline-kicker {
-    display: block;
-    color: $c-red;
 }
 
 .uit-header__standfirst {
