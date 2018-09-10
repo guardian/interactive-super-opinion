@@ -125,23 +125,6 @@
         border-bottom: none !important;
     }
 
-    h2 {
-        font-family: 'Guardian Egyptian Web';
-        font-size: 24px;
-        color: $c-black !important;
-        font-weight: normal;
-        background-color: $c-white;
-        padding: 3px 4px;
-        display: inline-block;
-        padding: 0 8px;
-        line-height: 1.4;
-        margin-bottom: 12px;
-
-        @include mq(tablet) {
-            font-size: 34px;
-        }
-    }
-
     .shif__drop-cap {
         font-family: 'Guardian Egyptian Web';
         font-weight: bold;
