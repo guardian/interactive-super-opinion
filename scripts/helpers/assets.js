@@ -140,6 +140,8 @@ module.exports = {
         var guardianHtml = fs.readFileSync('./scripts/immersive.html', 'utf8');
         var guardianTemplate = handlebars.compile(guardianHtml);
 
+        handlebars.registerPartial('content', fs.readFileSync('scripts/helpers/content.html', 'utf8'))
+
         var compiled = guardianTemplate({
             'html': fs.readFileSync(path + '/main.html'),
             'js': fs.readFileSync(path + '/main.js')
