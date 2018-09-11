@@ -8,7 +8,7 @@
         background-size: 100% 35px;
         background-repeat: no-repeat;
         background-position: bottom;
-        padding-bottom: 40px;
+        padding-bottom: 38px;
         margin-bottom: 6px;
     }
 }
@@ -47,6 +47,22 @@
 
     @include mq(tablet) {
         font-size: 22px;
+    }
+}
+
+.uit-header__credit {
+    font-family: 'Guardian Sans Web';
+    font-size: 14px;
+    color: $c-dark-grey;
+
+    @include mq(leftCol) {
+        position: absolute;
+        left: -160px;
+        bottom: 4px;
+    }
+
+    @include mq(wide) {
+        left: -240px;
     }
 }
 
