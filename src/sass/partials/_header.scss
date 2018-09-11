@@ -105,6 +105,7 @@
     font-size: 18px;
     margin-left: 0 !important;
     color: $c-orange;
+    margin: 0;
 
     @include mq(tablet) {
         font-size: 22px;
