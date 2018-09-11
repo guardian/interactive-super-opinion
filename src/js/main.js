@@ -2,5 +2,7 @@
 window.$ = require('./vendor/jquery.js');
 
 var share = require('./modules/share.js');
+var caps = require('./modules/caps.js');
 
 share.init();
+caps.init();

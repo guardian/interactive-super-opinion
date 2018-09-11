@@ -1,7 +1,6 @@
 .uit-header {
     position: relative;
     overflow: hidden;
-    padding-top: 20vh;
 
     .gs-container {
         background-image: repeating-linear-gradient(to bottom, darken($c-light-grey, 5%) 1px, transparent 2px, transparent 5px);
@@ -16,13 +15,57 @@
     }
 
     a {
-        color: $c-orange;
+        color: $c-orange !important;
         text-decoration: none;
 
         &:hover {
             color: $c-dark-orange;
         }
     }
+
+    .uit-content {
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            bottom: 0;
+            width: 400px;
+            background-color: red;
+            display: none;
+        }
+
+        &:before {
+            @include mq(leftCol) {
+                width: 140px;
+                left: -160px;
+                display: block;
+            }
+
+            @include mq(wide) {
+                width: 220px;
+                left: -240px;
+            }
+        }
+
+        &:after {
+            @include mq(desktop) {
+                display: block;
+                width: 300px;
+                right: -320px;
+            }
+
+            @include mq(leftCol) {
+                width: 380px;
+                right: -400px;
+            }
+        }
+    }
+}
+
+.uit-header__image {
+    width: 100%;
 }
 
 .uit-header__headline {
@@ -87,6 +130,8 @@
 }
 
 .uit-header__byline {
+    position: relative;
+    z-index: 10;
     margin-bottom: -38px;
     width: 140px;
     margin-left: auto;

@@ -54,7 +54,7 @@
         }
 
         @include mq(wide) {
-            margin-left: 20px !important;
+            margin-left: 0px !important;
         }
     }
 
@@ -129,9 +129,9 @@
         border-bottom: none !important;
     }
 
-    .shif__drop-cap {
+    .uit__drop-cap {
         font-family: 'Guardian Egyptian Web';
-        font-weight: bold;
+        font-weight: 200;
         display: inline-block;
         text-transform: uppercase;
         float: left;
@@ -140,7 +140,7 @@
         height: 4.3em;
     }
 
-    .shif__drop-inner {
+    .uit__drop-inner {
         font-size: 5.2em;
         line-height: 0.79;
     }
