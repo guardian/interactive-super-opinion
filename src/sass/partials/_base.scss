@@ -43,11 +43,14 @@
     }
 }
 
-.content, .article__body, .tonal--tone-feature {
+.content, .article__body, .tonal--tone-feature,
+figure.element-atom {
     background-color: #fef9f5 !important;
 }
 
 figure.element-atom {
+    position: relative;
+    z-index: 25;
     margin-top: 0;
     margin-bottom: 0;
 }

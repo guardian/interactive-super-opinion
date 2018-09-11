@@ -23,6 +23,10 @@
         padding: 0 !important;
     }
 
+    p:first-of-type {
+        padding-top: 6px;
+    }
+
     .element-rich-link {
         display: none;
     }
