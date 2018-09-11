@@ -11,6 +11,15 @@
         padding-bottom: 38px;
         margin-bottom: 6px;
     }
+
+    a {
+        color: $c-orange;
+        text-decoration: none;
+
+        &:hover {
+            color: $c-dark-orange;
+        }
+    }
 }
 
 .uit-header__headline {
