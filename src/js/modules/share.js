@@ -1,5 +1,5 @@
 var pageUrl = window.location.href.split('#')[0],
-    shareCopy = 'Our Progressive International is needed to fight rising fascism and globalists – Yanis Varoufakis';
+    shareCopy = 'Our new international movement will fight rising fascism and globalists – Yanis Varoufakis';
 
 module.exports =  {
     init: function() {
