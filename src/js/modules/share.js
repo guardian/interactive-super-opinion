@@ -1,5 +1,5 @@
 var pageUrl = window.location.href.split('#')[0],
-    shareCopy = 'What a cool article #Article';
+    shareCopy = 'A new authoritarian axis demands an international progressive front – Bernie Sanders';
 
 module.exports =  {
     init: function() {
