@@ -102,7 +102,7 @@
     font-weight: 700 !important;
     font-size: 18px !important;
     margin-left: 0 !important;
-    color: $c-orange;
+    color: $c-orange !important;
     margin: 0 !important;
 
     @include mq(tablet) {
