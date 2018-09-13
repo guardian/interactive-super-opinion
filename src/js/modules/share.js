@@ -1,5 +1,5 @@
 var pageUrl = window.location.href.split('#')[0],
-    shareCopy = 'A new authoritarian axis demands an international progressive front – Bernie Sanders';
+    shareCopy = 'Our Progressive International is needed to fight rising fascism and globalists – Yanis Varoufakis';
 
 module.exports =  {
     init: function() {
