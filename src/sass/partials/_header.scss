@@ -32,8 +32,9 @@
             top: 0;
             bottom: 0;
             width: 400px;
-            background-color: red;
             display: none;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
 
         &:before {
@@ -41,6 +42,7 @@
                 width: 140px;
                 left: -160px;
                 display: block;
+                background-image: url('{{ path }}/assets/left.jpg');
             }
 
             @include mq(wide) {
@@ -54,11 +56,7 @@
                 display: block;
                 width: 300px;
                 right: -320px;
-            }
-
-            @include mq(leftCol) {
-                width: 380px;
-                right: -400px;
+                background-image: url('{{ path }}/assets/right.jpg');
             }
         }
     }
@@ -86,6 +84,7 @@
     @include mq(tablet) {
         font-size: 56px;
         background-position: 0 5px;
+        min-height: 6em;
     }
 }
 
@@ -101,11 +100,11 @@
 
 .uit-header__tag {
     font-family: 'Guardian Egyptian Web';
-    font-weight: 700;
+    font-weight: 700 !important;
     font-size: 18px;
     margin-left: 0 !important;
     color: $c-orange;
-    margin: 0;
+    margin: 0 !important;
 
     @include mq(tablet) {
         font-size: 22px;

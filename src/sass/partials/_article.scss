@@ -12,6 +12,14 @@
         }
     }
 
+    h2 {
+        font-family: 'Guardian Egyptian Web';
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 1.2;
+        margin-bottom: 12px;
+    }
+
     p:first-letter {
         color: inherit !important;
         font-family: inherit !important;
@@ -65,49 +73,21 @@
         @include mq(leftCol) {
             position: relative;
             z-index: 25;
-            margin-left: 150px !important;
+            margin-left: 0px !important;
             max-width: 630px;
         }
 
-        @include mq(wide) {
-            margin-left: 230px !important;
-        }
-
         figcaption {
-            position: absolute;
-            top: 7px;
-            bottom: -22px;
-            padding-top: 0;
-            padding-left: 10px !important;
-
-            @include mq(leftCol) {
-                padding-right: 120px !important;
-            }
-        }
-
-        .element-image__caption {
-            font-family: 'Guardian Egyptian Web', Georgia, serif;
-            font-weight: 900;
-            font-size: 20px;
-            line-height: 1.25;
-            color: #121212;
-            margin-top: 0px;
-            margin-bottom: 18px;
-            background: linear-gradient($c-yellow, $c-yellow) no-repeat;
-            box-shadow: 4px 0 0 $c-yellow, -4px 0 0 $c-yellow;
-            display: inline;
+            display: none;
         }
 
         .element-image__credit {
-            color: $c-orange;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-
-            @include mq(leftCol) {
-                left: 10px;
-            }
+            display: none;
         }
+    }
+
+    .element-image.element--supporting:nth-of-type(3) {
+        float: right !important;
     }
 
     .figure__caption__icon {
