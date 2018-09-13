@@ -100,13 +100,13 @@
     z-index: 2;
     font-family: 'Guardian Egyptian Web';
     font-weight: 700 !important;
-    font-size: 18px;
+    font-size: 18px !important;
     margin-left: 0 !important;
     color: $c-orange;
     margin: 0 !important;
 
     @include mq(tablet) {
-        font-size: 22px;
+        font-size: 22px !important;
     }
 }
 
